@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'core/helpers/all_routes.dart';
+import 'core/helpers/helper_methods.dart';
 import 'core/helpers/navigation_service.dart';
 import 'loading_screen.dart';
 
@@ -16,9 +17,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    rotation();
+    setInitValue();
     return PopScope(
       canPop: false,
-      onPopInvokedWithResult: (didPop, result) {},
+      onPopInvokedWithResult: (didPop, result) {
+        showExitConfirmationDialog(context);
+      },
       child: LayoutBuilder(
         builder: (context, constraints) {
           return const UtillScreenMobile();
@@ -40,7 +45,9 @@ class UtillScreenMobile extends StatelessWidget {
       builder: (_, child) {
         return PopScope(
           canPop: false,
-          onPopInvokedWithResult: (didPop, result) {},
+          onPopInvokedWithResult: (didPop, result) {
+            showExitConfirmationDialog(context);
+          },
           child: GetMaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Fitness Tracking App',

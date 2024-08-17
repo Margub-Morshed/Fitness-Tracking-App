@@ -17,6 +17,9 @@ class TextFontStyle {
   static final headline20BoldMontserrat = GoogleFonts.montserrat(
       color: AppColors.c000B23, fontSize: 20.sp, fontWeight: FontWeight.w700);
 
+  static final headline20SemiBoldMontserrat = GoogleFonts.montserrat(
+      color: AppColors.c000B23, fontSize: 20.sp, fontWeight: FontWeight.w600);
+
   static final headline19SemiBoldMontserrat = GoogleFonts.montserrat(
       color: AppColors.c000B23, fontSize: 19.sp, fontWeight: FontWeight.w600);
 
