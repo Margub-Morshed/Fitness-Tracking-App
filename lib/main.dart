@@ -52,6 +52,7 @@ class UtillScreenMobile extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             title: 'Fitness Tracking App',
             theme: ThemeData(
+              scaffoldBackgroundColor: AppColors.cFFFFFF,
               primaryColor: AppColors.cF97316,
               useMaterial3: false,
             ),

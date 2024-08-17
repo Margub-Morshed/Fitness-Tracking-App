@@ -31,6 +31,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/chart.svg
   String get chart => 'assets/icons/chart.svg';
 
+  /// File path: assets/icons/distance.svg
+  String get distance => 'assets/icons/distance.svg';
+
   /// File path: assets/icons/home.svg
   String get home => 'assets/icons/home.svg';
 
@@ -43,12 +46,29 @@ class $AssetsIconsGen {
   /// File path: assets/icons/profile.svg
   String get profile => 'assets/icons/profile.svg';
 
+  /// File path: assets/icons/steps.svg
+  String get steps => 'assets/icons/steps.svg';
+
   /// File path: assets/icons/tick.svg
   String get tick => 'assets/icons/tick.svg';
 
+  /// File path: assets/icons/time.svg
+  String get time => 'assets/icons/time.svg';
+
   /// List of all assets
-  List<String> get values =>
-      [activity, calories, chart, home, notification, pause, profile, tick];
+  List<String> get values => [
+        activity,
+        calories,
+        chart,
+        distance,
+        home,
+        notification,
+        pause,
+        profile,
+        steps,
+        tick,
+        time
+      ];
 }
 
 class $AssetsImagesGen {
