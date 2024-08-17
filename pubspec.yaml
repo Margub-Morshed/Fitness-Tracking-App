@@ -19,8 +19,31 @@ dependencies:
 
 dev_dependencies:
   flutter_test:
-    sdk: flutter  
+    sdk: flutter
+  
+  build_runner:
+  flutter_gen_runner:  
   flutter_lints: ^4.0.0
+
+flutter_gen:
+  # Optional
+  output: lib/gen/
+  # Optional
+  line_length: 80
+
+  # Optional
+  integrations:
+    flutter_svg: false
+    flare_flutter: false
+    
+  colors:
+    inputs:
+      - assets/colors/colors.xml
+    outputs:
+      class_name: AppColors
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/colors/
