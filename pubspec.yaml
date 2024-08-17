@@ -19,6 +19,8 @@ dependencies:
   google_fonts: ^6.2.1
   custom_navigation_bar: ^0.8.2
   flutter_svg: ^2.0.10+1
+  badges: ^3.1.2
+  carousel_slider: ^5.0.0
 
 dev_dependencies:
   flutter_test:
@@ -51,3 +53,4 @@ flutter:
   assets:
     - assets/colors/
     - assets/icons/
+    - assets/images/

@@ -124,7 +124,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
                     : AppColors.c667085,
               ),
               title: Text(
-                "Profile ",
+                "Statistics ",
                 style: TextFontStyle.headline12SemiBoldOverpass.copyWith(
                   height: 1.7.h,
                   color: (_currentIndex == 2)
