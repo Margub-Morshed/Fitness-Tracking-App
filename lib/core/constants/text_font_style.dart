@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../gen/colors.gen.dart';
+import '../../gen/colors.gen.dart';
 
 class TextFontStyle {
   // Initializing Constructor
@@ -70,6 +70,9 @@ class TextFontStyle {
 
   static final headline12MediumMontserrat = GoogleFonts.montserrat(
       color: AppColors.c000B23, fontSize: 12.sp, fontWeight: FontWeight.w500);
+
+  static final headline12SemiBoldOverpass = GoogleFonts.overpass(
+      color: AppColors.c000B23, fontSize: 12.sp, fontWeight: FontWeight.w600);
 
   static final headline11NormalMontserrat = GoogleFonts.montserrat(
       color: AppColors.c000B23, fontSize: 11.sp, fontWeight: FontWeight.normal);
