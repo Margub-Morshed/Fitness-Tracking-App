@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <colors>
   // Project Colors
+  <color name="cFFFFFF">#FFFFFFFF</color> // White
+  <color name="c000000">#FF000000</color> // Black
   <color name="cF97316">#FFF97316</color>
+  <color name="c000B23">#FF000B23</color>
 </colors>

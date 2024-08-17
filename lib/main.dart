@@ -1,3 +1,4 @@
+import 'package:fitness_tracking_app/gen/colors.gen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -45,6 +46,7 @@ class UtillScreenMobile extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             title: 'Fitness Tracking App',
             theme: ThemeData(
+              primaryColor: AppColors.cF97316,
               useMaterial3: false,
             ),
             builder: (context, widget) {
