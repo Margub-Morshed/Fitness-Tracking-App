@@ -13,6 +13,15 @@ import 'package:flutter/material.dart';
 class AppColors {
   AppColors._();
 
+  /// Color: #FF000000
+  static const Color c000000 = Color(0xFF000000);
+
+  /// Color: #FF000B23
+  static const Color c000B23 = Color(0xFF000B23);
+
   /// Color: #FFF97316
   static const Color cF97316 = Color(0xFFF97316);
+
+  /// Color: #FFFFFFFF
+  static const Color cFFFFFF = Color(0xFFFFFFFF);
 }
