@@ -5,7 +5,7 @@ import '../../../../core/constants/text_font_style.dart';
 import '../../../../core/helpers/ui_helpers.dart';
 import '../../../../gen/assets.gen.dart';
 import '../../../../gen/colors.gen.dart';
-import '../data/models/daily_activity.dart';
+import '../../data/models/daily_activity.dart';
 import 'dot_divider.dart';
 import 'notification_button.dart';
 

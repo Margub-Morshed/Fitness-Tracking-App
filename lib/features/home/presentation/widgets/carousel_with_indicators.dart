@@ -1,5 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:fitness_tracking_app/features/home/presentation/data/models/daily_activity.dart';
+import 'package:fitness_tracking_app/features/home/data/models/daily_activity.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../core/helpers/ui_helpers.dart';
