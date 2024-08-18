@@ -7,8 +7,8 @@ import 'package:fitness_tracking_app/gen/colors.gen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import '../../../gen/assets.gen.dart';
-import '../../home/presentation/widgets/home.dart';
+import '../../../../gen/assets.gen.dart';
+import '../../../home/presentation/widgets/home.dart';
 
 class DailyActivityScreen extends StatelessWidget {
   const DailyActivityScreen({super.key});
