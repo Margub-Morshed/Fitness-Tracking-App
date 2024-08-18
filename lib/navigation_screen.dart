@@ -1,5 +1,5 @@
 // ignore_for_file: unused_field, deprecated_member_use
-import 'package:fitness_tracking_app/features/daily_activity/screens/daily_activity.dart';
+import 'package:fitness_tracking_app/features/daily_activity/presentation/screens/daily_activity.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
