@@ -25,6 +25,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/activity.svg
   String get activity => 'assets/icons/activity.svg';
 
+  /// File path: assets/icons/alert.svg
+  String get alert => 'assets/icons/alert.svg';
+
   /// File path: assets/icons/calories.svg
   String get calories => 'assets/icons/calories.svg';
 
@@ -33,6 +36,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/distance.svg
   String get distance => 'assets/icons/distance.svg';
+
+  /// File path: assets/icons/document.svg
+  String get document => 'assets/icons/document.svg';
 
   /// File path: assets/icons/home.svg
   String get home => 'assets/icons/home.svg';
@@ -43,8 +49,17 @@ class $AssetsIconsGen {
   /// File path: assets/icons/pause.svg
   String get pause => 'assets/icons/pause.svg';
 
+  /// File path: assets/icons/person.svg
+  String get person => 'assets/icons/person.svg';
+
   /// File path: assets/icons/profile.svg
   String get profile => 'assets/icons/profile.svg';
+
+  /// File path: assets/icons/sign_out.svg
+  String get signOut => 'assets/icons/sign_out.svg';
+
+  /// File path: assets/icons/sleep.svg
+  String get sleep => 'assets/icons/sleep.svg';
 
   /// File path: assets/icons/steps.svg
   String get steps => 'assets/icons/steps.svg';
@@ -55,19 +70,28 @@ class $AssetsIconsGen {
   /// File path: assets/icons/time.svg
   String get time => 'assets/icons/time.svg';
 
+  /// File path: assets/icons/wake_up.svg
+  String get wakeUp => 'assets/icons/wake_up.svg';
+
   /// List of all assets
   List<String> get values => [
         activity,
+        alert,
         calories,
         chart,
         distance,
+        document,
         home,
         notification,
         pause,
+        person,
         profile,
+        signOut,
+        sleep,
         steps,
         tick,
-        time
+        time,
+        wakeUp
       ];
 }
 
