@@ -1,8 +1,8 @@
 import 'package:fitness_tracking_app/core/constants/text_font_style.dart';
 import 'package:fitness_tracking_app/core/helpers/ui_helpers.dart';
 import 'package:fitness_tracking_app/core/widgets/custom_appbar.dart';
-import 'package:fitness_tracking_app/features/home/presentation/data/models/activities_list.dart';
-import 'package:fitness_tracking_app/features/home/presentation/data/models/daily_activity.dart';
+import 'package:fitness_tracking_app/features/home/data/models/activities_list.dart';
+import 'package:fitness_tracking_app/features/home/data/models/daily_activity.dart';
 import 'package:fitness_tracking_app/gen/colors.gen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

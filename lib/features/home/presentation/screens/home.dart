@@ -1,6 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:fitness_tracking_app/core/helpers/ui_helpers.dart';
-import 'package:fitness_tracking_app/features/home/presentation/data/models/activities_list.dart';
+import 'package:fitness_tracking_app/features/home/data/models/activities_list.dart';
 import 'package:fitness_tracking_app/features/home/presentation/widgets/carousel_with_indicators.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
