@@ -98,6 +98,17 @@ class $AssetsIconsGen {
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/abs_workout.png
+  AssetGenImage get absWorkout =>
+      const AssetGenImage('assets/images/abs_workout.png');
+
+  /// File path: assets/images/banner.png
+  AssetGenImage get banner => const AssetGenImage('assets/images/banner.png');
+
+  /// File path: assets/images/both_side.png
+  AssetGenImage get bothSide =>
+      const AssetGenImage('assets/images/both_side.png');
+
   /// File path: assets/images/cycling.png
   AssetGenImage get cycling => const AssetGenImage('assets/images/cycling.png');
 
@@ -105,14 +116,42 @@ class $AssetsImagesGen {
   AssetGenImage get defaultProfilePic =>
       const AssetGenImage('assets/images/default_profile_pic.png');
 
+  /// File path: assets/images/full_body.png
+  AssetGenImage get fullBody =>
+      const AssetGenImage('assets/images/full_body.png');
+
   /// File path: assets/images/jogging.png
   AssetGenImage get jogging => const AssetGenImage('assets/images/jogging.png');
+
+  /// File path: assets/images/lower_back.png
+  AssetGenImage get lowerBack =>
+      const AssetGenImage('assets/images/lower_back.png');
+
+  /// File path: assets/images/strength_exercise.png
+  AssetGenImage get strengthExercise =>
+      const AssetGenImage('assets/images/strength_exercise.png');
+
+  /// File path: assets/images/torso_trap.png
+  AssetGenImage get torsoTrap =>
+      const AssetGenImage('assets/images/torso_trap.png');
 
   /// File path: assets/images/yoga.png
   AssetGenImage get yoga => const AssetGenImage('assets/images/yoga.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [cycling, defaultProfilePic, jogging, yoga];
+  List<AssetGenImage> get values => [
+        absWorkout,
+        banner,
+        bothSide,
+        cycling,
+        defaultProfilePic,
+        fullBody,
+        jogging,
+        lowerBack,
+        strengthExercise,
+        torsoTrap,
+        yoga
+      ];
 }
 
 class Assets {
