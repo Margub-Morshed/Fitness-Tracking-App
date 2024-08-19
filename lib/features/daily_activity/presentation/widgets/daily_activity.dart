@@ -155,15 +155,16 @@ List<Widget> buildActivitiesCardPanel() {
   );
 }
 
-SizedBox buildActivityProgressBar() {
-  return SizedBox(
+Widget buildActivityProgressBar() {
+  return Container(
     height: 200.h,
+    padding: EdgeInsets.only(left: 10.w),
     child: Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         // Left Side: Image and Activity Name
         Expanded(
-          flex: 2,
+          flex: 3,
           child: Column(
             children: [
               buildLeftPortion(
@@ -192,7 +193,7 @@ SizedBox buildActivityProgressBar() {
 
         // Right Side: Progress Bar and Percentage Label
         Expanded(
-          flex: 3,
+          flex: 4,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
