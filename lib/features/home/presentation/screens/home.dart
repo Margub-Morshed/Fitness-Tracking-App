@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../widgets/goal_card.dart';
 import '../widgets/home.dart';
+import '../widgets/progress_card.dart';
 import '../widgets/section_header.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -32,6 +33,16 @@ class _HomeScreenState extends State<HomeScreen> {
               UIHelper.verticalSpace(14.h),
               const SectionHeader(title: 'Your Statistics'),
               UIHelper.verticalSpace(14.h),
+              ProgressCard(
+                title: 'In-Progress',
+                progressPercentage: '56%',
+                progressWidth: (MediaQuery.of(context).size.width -
+                        (UIHelper.kDefaultPadding() * 2)) *
+                    0.45,
+                caloriesBurned: '1,116.5',
+                caloriesGoal: '2,000',
+              ),
+              UIHelper.verticalSpaceMediumLarge,
               const SectionHeader(title: 'Daily Activities'),
               UIHelper.verticalSpace(14.h),
               CarouselWithIndicators(
