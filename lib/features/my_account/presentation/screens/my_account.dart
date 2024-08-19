@@ -4,6 +4,7 @@ import '../../../../core/constants/text_font_style.dart';
 import '../../../../core/helpers/ui_helpers.dart';
 import '../../../../core/widgets/custom_appbar.dart';
 import '../../../../gen/assets.gen.dart';
+import '../widgets/custom_bar_chart.dart';
 import '../widgets/info_row.dart';
 import '../widgets/my_account.dart';
 import '../widgets/other_card.dart';
@@ -53,6 +54,14 @@ class MyAccountScreen extends StatelessWidget {
                   ),
                 ],
               ),
+              UIHelper.verticalSpaceSemiLarge,
+
+              // Custom Vertical Bar Chart
+              SizedBox(
+                height: 180.h,
+                child: const CustomBarChart(),
+              ),
+
               UIHelper.verticalSpaceMedium,
               buildCompletionStatusText(),
               UIHelper.verticalSpaceSemiLarge,
