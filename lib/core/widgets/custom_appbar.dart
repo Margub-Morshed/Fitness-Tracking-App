@@ -1,3 +1,4 @@
+import 'package:fitness_tracking_app/core/helpers/ui_helpers.dart';
 import 'package:fitness_tracking_app/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -12,6 +13,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final List<Widget>? action;
   final bool isBackNeeded;
   final bool centerTitle;
+  final bool showNotification;
   final VoidCallback? onTap;
   final VoidCallback? onPop;
   final Color? bgColor;
@@ -20,11 +22,12 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   const CustomAppBar({
     this.title = "",
-    this.action = const [],
+    this.action,
     this.isBackNeeded = false,
     super.key,
     this.onTap,
     this.centerTitle = false,
+    this.showNotification = false,
     this.onPop,
     this.bgColor,
     this.popIconColor,
@@ -56,11 +59,13 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: action ??
           [
             // Notification
-            SvgPicture.asset(
-              Assets.icons.notification,
-              height: 24.h,
-              width: 24.w,
-            )
+            showNotification
+                ? Padding(
+                    padding: EdgeInsets.only(right: UIHelper.kDefaultPadding()),
+                    child: SvgPicture.asset(Assets.icons.notification,
+                        height: 24.h, width: 24.w),
+                  )
+                : const SizedBox.shrink(),
           ],
     );
   }

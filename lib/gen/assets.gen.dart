@@ -58,6 +58,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/profile.svg
   String get profile => 'assets/icons/profile.svg';
 
+  /// File path: assets/icons/right_arrow.svg
+  String get rightArrow => 'assets/icons/right_arrow.svg';
+
   /// File path: assets/icons/sign_out.svg
   String get signOut => 'assets/icons/sign_out.svg';
 
@@ -90,6 +93,7 @@ class $AssetsIconsGen {
         pause,
         person,
         profile,
+        rightArrow,
         signOut,
         sleep,
         steps,

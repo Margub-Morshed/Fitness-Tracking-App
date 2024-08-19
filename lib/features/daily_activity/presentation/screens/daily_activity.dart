@@ -13,7 +13,11 @@ class DailyActivityScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: const CustomAppBar(title: 'Daily Activity', isBackNeeded: true),
+        appBar: const CustomAppBar(
+          title: 'Daily Activity',
+          isBackNeeded: true,
+          showNotification: true,
+        ),
         body: SingleChildScrollView(
           physics: const BouncingScrollPhysics(),
           padding: EdgeInsets.all(UIHelper.kDefaultPadding()),
