@@ -112,6 +112,7 @@ class MyAccountScreen extends StatelessWidget {
                 'Others',
                 style: TextFontStyle.headline16SemiBoldMontserrat,
               ),
+              UIHelper.verticalSpace(14.h),
               OtherCard(
                   prefixIconPath: Assets.icons.person, label: 'My Account'),
               OtherCard(
