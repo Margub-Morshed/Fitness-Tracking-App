@@ -40,6 +40,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/document.svg
   String get document => 'assets/icons/document.svg';
 
+  /// File path: assets/icons/done.svg
+  String get done => 'assets/icons/done.svg';
+
   /// File path: assets/icons/home.svg
   String get home => 'assets/icons/home.svg';
 
@@ -81,6 +84,7 @@ class $AssetsIconsGen {
         chart,
         distance,
         document,
+        done,
         home,
         notification,
         pause,
