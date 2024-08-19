@@ -4,6 +4,7 @@ import 'package:fitness_tracking_app/core/widgets/custom_appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../widgets/daily_activity.dart';
+import '../widgets/selected_day_card.dart';
 
 class DailyActivityScreen extends StatelessWidget {
   const DailyActivityScreen({super.key});
@@ -23,7 +24,9 @@ class DailyActivityScreen extends StatelessWidget {
                 'Today your activities',
                 style: TextFontStyle.headline20SemiBoldMontserrat,
               ),
-              UIHelper.verticalSpaceSemiLarge,
+              UIHelper.verticalSpaceMediumLarge,
+              const SelectDayCard(),
+              UIHelper.verticalSpaceMedium,
               buildBurnedCalRow(),
               UIHelper.verticalSpace(16.h),
               buildActivityProgressBar(),
