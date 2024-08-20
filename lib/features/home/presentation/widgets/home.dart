@@ -7,6 +7,7 @@ import '../../../../gen/assets.gen.dart';
 import '../../../../gen/colors.gen.dart';
 import '../../data/models/daily_activity.dart';
 import 'dot_divider.dart';
+import 'half_linear_progress_indicator.dart';
 import 'notification_button.dart';
 
 Widget buildHeaderRow(DailyActivityModel activity) {
@@ -191,6 +192,89 @@ Column buildGreetingsDatePanel() {
           color: AppColors.c7B7B7B,
           letterSpacing: -0.06,
         ),
+      ),
+    ],
+  );
+}
+
+Text buildProgressCountTSpan() {
+  return Text.rich(
+    TextSpan(
+      children: [
+        TextSpan(
+          text: '7',
+          style: TextFontStyle.headline20SemiBoldMontserrat,
+        ),
+        TextSpan(
+          text: 'h ',
+          style: TextFontStyle.headline12MediumMontserrat
+              .copyWith(color: AppColors.c494949),
+        ),
+        TextSpan(
+          text: '34',
+          style: TextFontStyle.headline20SemiBoldMontserrat,
+        ),
+        TextSpan(
+          text: 'm',
+          style: TextFontStyle.headline12MediumMontserrat
+              .copyWith(color: AppColors.c494949),
+        ),
+      ],
+    ),
+  );
+}
+
+Padding buildHalfProgressPanel({
+  required double percent,
+  required String icon,
+  required String label,
+  String? count,
+  Widget? countWidget,
+  required Color activeColor,
+  required Color inActiveColor,
+}) {
+  return Padding(
+    padding: EdgeInsets.only(top: 12.h),
+    child: Column(
+      children: [
+        buildProgressInfoCol(
+            icon: icon, label: label, countWidget: countWidget, count: count),
+        UIHelper.verticalSpace4,
+        UIHelper.verticalSpace4,
+        HalfLinearProgressIndicator(
+          percent: percent,
+          activeColor: activeColor,
+          inActiveColor: inActiveColor,
+        ),
+      ],
+    ),
+  );
+}
+
+Column buildProgressInfoCol(
+    {required String icon,
+    required String label,
+    Widget? countWidget,
+    String? count}) {
+  return Column(
+    children: [
+      Row(
+        children: [
+          SvgPicture.asset(icon, height: 18.h, width: 18.w),
+          UIHelper.horizontalSpace(2.w),
+          Text(
+            label,
+            style: TextFontStyle.headline14MediumMontserrat
+                .copyWith(color: AppColors.c494949),
+          )
+        ],
+      ),
+      UIHelper.verticalSpace4,
+      Align(
+        alignment: Alignment.topRight,
+        child: countWidget ??
+            Text(count ?? "NA",
+                style: TextFontStyle.headline20SemiBoldMontserrat),
       ),
     ],
   );

@@ -43,6 +43,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/done.svg
   String get done => 'assets/icons/done.svg';
 
+  /// File path: assets/icons/heart_rate.svg
+  String get heartRate => 'assets/icons/heart_rate.svg';
+
   /// File path: assets/icons/home.svg
   String get home => 'assets/icons/home.svg';
 
@@ -60,6 +63,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/right_arrow.svg
   String get rightArrow => 'assets/icons/right_arrow.svg';
+
+  /// File path: assets/icons/search.svg
+  String get search => 'assets/icons/search.svg';
 
   /// File path: assets/icons/sign_out.svg
   String get signOut => 'assets/icons/sign_out.svg';
@@ -88,12 +94,14 @@ class $AssetsIconsGen {
         distance,
         document,
         done,
+        heartRate,
         home,
         notification,
         pause,
         person,
         profile,
         rightArrow,
+        search,
         signOut,
         sleep,
         steps,
