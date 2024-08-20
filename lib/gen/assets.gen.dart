@@ -139,6 +139,10 @@ class $AssetsImagesGen {
   /// File path: assets/images/jogging.png
   AssetGenImage get jogging => const AssetGenImage('assets/images/jogging.png');
 
+  /// File path: assets/images/logo_512.png
+  AssetGenImage get logo512 =>
+      const AssetGenImage('assets/images/logo_512.png');
+
   /// File path: assets/images/lower_back.png
   AssetGenImage get lowerBack =>
       const AssetGenImage('assets/images/lower_back.png');
@@ -163,6 +167,7 @@ class $AssetsImagesGen {
         defaultProfilePic,
         fullBody,
         jogging,
+        logo512,
         lowerBack,
         strengthExercise,
         torsoTrap,
