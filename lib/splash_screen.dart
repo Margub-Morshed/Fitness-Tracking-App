@@ -1,4 +1,5 @@
-import 'package:fitness_tracking_app/core/constants/text_font_style.dart';
+import 'package:fitness_tracking_app/core/helpers/ui_helpers.dart';
+import 'package:fitness_tracking_app/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -7,12 +8,10 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text(
-          "Splash",
-          style: TextFontStyle.bodyBold14,
-        ),
-      ),
+      body: Container(
+          alignment: Alignment.center,
+          padding: EdgeInsets.all(UIHelper.kDefaultPadding()),
+          child: Image.asset(Assets.images.logo512.path)),
     );
   }
 }
