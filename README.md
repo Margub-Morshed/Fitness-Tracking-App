@@ -1,7 +1,7 @@
 # Fitness Tracking App
 
 ## Project Owner
-This project is owned and maintained by [Margub Morshed](https://www.linkedin.com/in/morshed-raian-khan-%F0%9F%87%A7%F0%9F%87%A9-b0199021a/).
+This project is owned and maintained by [Margub Morshed](https://www.linkedin.com/in/morshed-raian-khan-%F0%9F%87%A7%F0%9F%87%A9-b0199021a/)
 
 ## Description
 Introducing the Fitness Tracking App, a sophisticated solution crafted with Feature-First Architecture to deliver an unparalleled fitness management experience. Designed with attention to user-centric features, this app integrates advanced technologies and modern UI enhancements to support users in achieving their fitness goals efficiently and effectively.
@@ -36,8 +36,6 @@ Introducing the Fitness Tracking App, a sophisticated solution crafted with Feat
 ## Video
 https://github.com/user-attachments/assets/e78a405e-3024-4108-9162-7c3b181215ca
 
-
-
 ## Screenshots
 
 |                          Home Screen                          |                     Activity Screen                     |                          Statistics Screen                           |                 Profile Screen                 |
@@ -45,7 +43,7 @@ https://github.com/user-attachments/assets/e78a405e-3024-4108-9162-7c3b181215ca
 | <img src="assets/images/home.png" height="400" width="auto"> | <img src="assets/images/activity.png" height="400" width="auto"> | <img src="assets/images/statistics.png" height="400" width="auto"> | <img src="assets/images/profile.png" height="400" width="auto"> |
 
 ## Project Structure (Feature First)
-Within the download you'll find the following directories and files:
+Within the project, you'll find the following directories and files:
 
 ```
 Fitness Tracking App/
