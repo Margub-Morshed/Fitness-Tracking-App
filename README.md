@@ -39,7 +39,7 @@ Introducing the Fitness Tracking App, a sophisticated solution crafted with Feat
 
 |                          Home Screen                          |                     Activity Screen                     |                          Statistics Screen                           |                 Profile Screen                 |
 |:--------------------------------------------------------------:|:--------------------------------------------------------------:|:--------------------------------------------------------------:|:--------------------------------------------------------------:|
-| <img src="assets/home.png" height="400" width="auto"> | <img src="assets/activity.png" height="400" width="auto"> | <img src="assets/statistics.png" height="400" width="auto"> | <img src="assets/profile.png" height="400" width="auto"> |
+| <img src="assets/images/home.png" height="400" width="auto"> | <img src="assets/images/activity.png" height="400" width="auto"> | <img src="assets/images/statistics.png" height="400" width="auto"> | <img src="assets/images/profile.png" height="400" width="auto"> |
 
 ## Project Structure (Feature First)
 Within the download you'll find the following directories and files:
