@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:percent_indicator/percent_indicator.dart';
 import '../../../../core/constants/text_font_style.dart';
 import '../../../../core/helpers/ui_helpers.dart';
 import '../../../../gen/assets.gen.dart';
@@ -8,7 +9,7 @@ import '../../../../gen/colors.gen.dart';
 
 class ProgressCard extends StatelessWidget {
   final String title;
-  final String progressPercentage;
+  final int progressPercentage;
   final double progressWidth;
   final String caloriesBurned;
   final String caloriesGoal;
@@ -52,8 +53,11 @@ class ProgressCard extends StatelessWidget {
           _buildHeader(),
           UIHelper.verticalSpace(14.h),
 
-          // Red progress bar with percentage
-          _buildProgressBar(),
+          // Red progress bar with percentage (Package)
+          _progressIndicator(percent: (progressPercentage / 100)),
+
+          // Mine Custom One
+          // _buildProgressBar(),
           UIHelper.verticalSpace(16.h),
 
           // You've burned...
@@ -89,6 +93,22 @@ class ProgressCard extends StatelessWidget {
     );
   }
 
+  LinearPercentIndicator _progressIndicator({required double percent}) {
+    return LinearPercentIndicator(
+      padding: EdgeInsets.zero,
+      animation: true,
+      lineHeight: 6..h,
+      animationDuration: 1200,
+      animateFromLastPercent: true,
+      percent: percent,
+      linearStrokeCap: LinearStrokeCap.roundAll,
+      barRadius: Radius.circular(3.r),
+      progressColor: AppColors.cDC4040,
+      backgroundColor: AppColors.c686868,
+    );
+  }
+
+  // ignore: unused_element
   Container _buildProgressBar() {
     return Container(
       height: 6.h,
@@ -120,7 +140,7 @@ class ProgressCard extends StatelessWidget {
         ),
         UIHelper.horizontalSpace(12.w),
         Text(
-          progressPercentage,
+          '$progressPercentage %',
           style: TextFontStyle.headline24MediumMontserrat,
         ),
         const Spacer(),
