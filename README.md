@@ -34,6 +34,9 @@ Introducing the Fitness Tracking App, a sophisticated solution crafted with Feat
 - **Enhanced UI/UX:** Designed with a focus on user experience, incorporating modern UI effects to create an aesthetically pleasing and intuitive interface.
 
 ## Video
+https://github.com/user-attachments/assets/e78a405e-3024-4108-9162-7c3b181215ca
+
+
 
 ## Screenshots
 
